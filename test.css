@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    right: 3%;
+    font-size: 25px;
+    font-weight: bold;
+    color: hsl(123, 96%, 29%);
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.intro, .skills, .me{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image{
+    position: relative;
+    left: 30%;
+    top: 8px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    list-style: none;
+    padding: 1.5px;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.navbar ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: hsl(123, 96%, 29%);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar ul li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.desc{
+    position: absolute;
+    top: 47%;
+    left: 14%;
+
+}
+
+h1{
+    color: hsl(137, 71%, 92%);
+    margin: 10px 0px 18px;
+    font-size: 75px;
+}
+
+h2{
+    color: white;
+    font-size: 33px;
+    margin-bottom: 18px;
+}
+
+h3{
+    color: white;
+}
+
+.about-image{
+    position: relative;
+    top: 10px;
+    right: 3%;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+
+.about-text{
+    color: white;
+    width: 500px;
+}
+
+.about-text h2, .skills h2{
+    font-size: 60px;
+}
+
+h5{
+    color: hsl(123, 96%, 29%);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+p{
+    color: hsl(139, 26%, 88%);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 17px;
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.contact p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.button, .buttontwo{
+    padding: 8px;
+    margin: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid hsl(123, 96%, 29%);
+    background-color: hsl(123, 96%, 29%);
+    color: white;
+    font-size: 25px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px dotted hsl(123, 96%, 29%);
+}
+
+.email a{
+    margin: 10px;
+    margin-left: 6%;
+    padding: 6px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: hsl(123, 96%, 29%);
+}
+
+span{
+    text-decoration: underline;
+}
+
+.skills-image{
+    position: relative;
+    margin: 10px;
+    border-radius: 17px;
+}
+
+.skills ul li{
+    color: white;
+    padding: 8px;
+    margin: 10px;
+}
+
+.skills ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.prskills{
+    margin-top: 7%;
+    text-transform: capitalize;
+}
+
+.buttontwo:hover {
+    cursor: pointer;
+}
+
+#one{
+    background-color: red;
+    border: 2px solid red;
+}
+
+#two{
+    background-color: rgb(66, 227, 239);
+    border: 2px solid rgb(66, 227, 239);
+}
+
+#three{
+    background-color: yellow;
+    border: 2px solid yellow;
+}
+
+#four{
+    background-color: blue;
+    border: 2px solid blue;
+}
+
+
+
+
